@@ -1,0 +1,45 @@
+
+
+.blog-section{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-top: 20px;
+}
+.nove{
+  background:#5c97bf;
+}
+.nove a{
+  color: white;
+}
+.bttn{
+  border: 2px solid white;
+}
+.img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.ProfileBlock{
+background: #eeeeee;
+height: auto;
+padding: 20px;
+}
+body{
+  background:  #eeeeee;
+}
+
+.line{
+  background: white;
+  width: 28px;
+  height: 5px;
+  margin: 4px 0px;
+}
+.blank{
+  margin: 100px 0px;
+}
+.page-direction{
+  margin-top: 30px;
+  margin-left: 30px;
+}

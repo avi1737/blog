@@ -1,0 +1,27 @@
+{% extends 'blogs/base.html'%}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class='container ProfileBlock'>
+    <h1>Profile Info</h1>
+    <img class="img" src='{{ user.profile.image.url }}' alt='profile-pic'>
+    <h2  id="picName">{{ user.username }}</h2>
+    <p id="picEmail">{{ user.email }}</p>
+
+    <form method="POST">
+      {% csrf_token %}
+     {{ u_form|crispy }}
+     <button type="submit" class="btn btn-primary" name="update">Update</button>
+    </form>
+
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+     {{ p_form|crispy }}
+     <button type="submit" class="btn btn-primary" name="register">Update Picture</button>
+    </form>
+
+
+</div>
+
+{% endblock content %}
